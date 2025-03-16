@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "express": "^4.21.2"
-  }
+  },
+  "name": "patch",
+  "version": "1.0.0",
+  "description": "Patch.JS",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chippest/Patch.git"
+  },
+  "author": "Chipp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chippest/Patch/issues"
+  },
+  "homepage": "https://github.com/chippest/Patch#readme"
 }
