@@ -15,7 +15,12 @@ module.exports = {
   async execute(interaction) {
     const target = interaction.options.getUser("target");
     const randomRoast = roasts[Math.floor(Math.random() * roasts.length)];
-    const personalizedRoast = randomRoast.replace("{user}", `<@${target.id}>`);
+    let personalizedRoast = randomRoast.replace("{user}", `<@${target.id}>`);
+    if (target.id === interaction.client.user.id) {
+      personalizedRoast =
+        "Nice try, " +
+        randomRoast.replace("{user}", `<@${interaction.user.id}>`);
+    }
     await interaction.reply(personalizedRoast);
   },
 };
