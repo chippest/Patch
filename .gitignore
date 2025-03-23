@@ -36,3 +36,4 @@ build/
 # Optional Linux swap files
 *.swp
 config.json
+database.db
